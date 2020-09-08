@@ -41,7 +41,7 @@ Heres the command line well use to assemble our asm files:
 $ nasm -f elf64 <file.asm>
 ```
 
-## Author :sunglasses:
+## Author <br/> :sunglasses:
 Gonzalo Gomez Millan  
 :octocat: [GitHub](https://github.com/gogomillan)
 :newspaper: [Twitter](https://twitter.com/gogomillan)
