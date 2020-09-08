@@ -13,7 +13,7 @@ Heres a list of the different tools used during this concept:
 - NASM version 2.10.09
 - gcc version 4.8.4
 
-## :pencil:Assembly_syntax
+## :pencil2: Assembly_syntax
 - x86 Assembly
 - 64-bit architecture
 - Intel
