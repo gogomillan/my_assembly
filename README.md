@@ -2,23 +2,23 @@
 Everything you need to know about basics in x86-64 Assembly
 
 ## :book: Table of content
-- [Requirements](#Requirements)
-- [Assembly_syntax](#Assembly_syntax)
-- [Assembly_to_ELF_object_file](#Assembly_to_ELF_object_file)
+- [Requirements](#:iheavy_check_mark:Requirements)
+- [Assembly_syntax](#:pencil2:Assembly_syntax)
+- [Assembly_to_ELF_object_file](#:page_facing_up:Assembly)
 
-## Requirements
+## :iheavy_check_mark:Requirements
 Heres a list of the different tools used during this concept: 
 - Linux 3.13.0-92-generic
 - Ubuntu 14.04 LTS
 - NASM version 2.10.09
 - gcc version 4.8.4
 
-## :pencil2: Assembly_syntax
+## :pencil2:Assembly_syntax
 - x86 Assembly
 - 64-bit architecture
 - Intel
 
-## :page_facing_up: Assembly to ELF object file
+## :page_facing_up:Assembly to ELF object file
 Do you remember the different steps to transform a C source file onto an
 executable file? Here it goes:
 
