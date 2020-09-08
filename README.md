@@ -6,7 +6,7 @@ Everything you need to know about basics in x86-64 Assembly
 - [Assembly_syntax](#Assembly_syntax)
 - [Assembly_to_ELF_object_file](#Assembly_to_ELF_object_file)
 
-## :tick: Requirements
+## :heavy_check_mark: Requirements
 Heres a list of the different tools used during this concept: 
 - Linux 3.13.0-92-generic
 - Ubuntu 14.04 LTS
@@ -18,7 +18,7 @@ Heres a list of the different tools used during this concept:
 - 64-bit architecture
 - Intel
 
-## :example: Assembly to ELF object file
+## :page_facing_up: Assembly to ELF object file
 Do you remember the different steps to transform a C source file onto an
 executable file? Here it goes:
 
