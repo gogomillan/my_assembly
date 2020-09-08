@@ -6,7 +6,7 @@ Everything you need to know about basics in x86-64 Assembly
 - [Assembly_syntax](#Assembly_syntax)
 - [Assembly_to_ELF_object_file](#Assembly_to_ELF_object_file)
 
-## Requirements :heavy_check_mark:
+## Requirements
 Heres a list of the different tools used during this concept: 
 - Linux 3.13.0-92-generic
 - Ubuntu 14.04 LTS
