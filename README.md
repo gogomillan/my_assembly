@@ -40,8 +40,10 @@ Heres the command line well use to assemble our asm files:
 ```
 $ nasm -f elf64 <file.asm>
 ```
+This command forms a .o file that we can then link with other .o files (even
+if they were compiled from C source code).
 
-## Author <br/> :sunglasses:
+## Author
 Gonzalo Gomez Millan  
 :octocat: [GitHub](https://github.com/gogomillan)
 :newspaper: [Twitter](https://twitter.com/gogomillan)
