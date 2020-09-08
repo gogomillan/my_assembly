@@ -43,9 +43,9 @@ $ nasm -f elf64 <file.asm>
 
 ## Author :sunglasses:
 Gonzalo Gomez Millan  
-:octocat: [GitHub](https://github.com/gogomillan)  
-:newspaper: [Twitter](https://twitter.com/gogomillan)  
-:notebook: [LinkedIn](https://linkedin.com/in/gogomillan)  
+:octocat: [GitHub](https://github.com/gogomillan)
+:newspaper: [Twitter](https://twitter.com/gogomillan)
+:notebook: [LinkedIn](https://linkedin.com/in/gogomillan)
 
 ## License
 MIT Licence [(read)](LICENSE)
