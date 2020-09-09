@@ -5,6 +5,7 @@ Everything you need to know about basics in x86-64 Assembly
 - [Requirements](#Requirements)
 - [Assembly_syntax](#Assembly_syntax)
 - [Assembly_to_ELF_object_file](#Assembly)
+- [Workshop](#Workshop)
 - [Author](#Author)
 - [License](#License)
 
@@ -14,6 +15,7 @@ Heres a list of the different tools used during this concept:
 - Ubuntu 14.04 LTS
 - NASM version 2.10.09
 - gcc version 4.8.4
+- [EYNTK] x86-64 Assembly (Refference to the Holberton's intranet)
 
 ## Assembly_syntax
 - x86 Assembly
@@ -42,6 +44,67 @@ $ nasm -f elf64 <file.asm>
 ```
 This command forms a .o file that we can then link with other .o files (even
 if they were compiled from C source code).
+
+## Workshop
+
+### Task 0: Add me
+
+Write a simple procedure in Assembly that takes two integers as parameters
+(32-bit), and returns their sum as an integer (32-bit).  
+
+For this problem you dont have to use any local variable, so you dont have to
+take care of the stack yet.  
+
+The purpose here is to learn how to do simple arithmetic on registers and return
+a value.
+
+**Example:**  
+```bash
+alex@~/0x09-libasm/Concept$ cat add_me_main.c 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int add_me(int a, int b);
+
+/**
+ * main - Program entry point
+ * @argc: Arguments counter
+ * @argv: Arguments vector
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(int argc, const char *argv[])
+{
+    int a;
+    int b;
+    int res;
+
+    if (argc < 3)
+    {
+        dprintf(STDERR_FILENO, "Usage: %s <a> <b>\n", argv[0]);
+        return (EXIT_FAILURE);
+    }
+
+    a = atoi(argv[1]);
+    b = atoi(argv[2]);
+    res = add_me(a, b);
+
+    printf("%d + %d = %d\n", a, b, res);
+
+    return (EXIT_SUCCESS);
+}
+alex@~/0x09-libasm/Concept$ nasm -f elf64 add_me.asm 
+alex@~/0x09-libasm/Concept$ gcc -c add_me_main.c 
+alex@~/0x09-libasm/Concept$ gcc add_me.o add_me_main.o 
+alex@~/0x09-libasm/Concept$ ./a.out 402 98
+402 + 98 = 500
+alex@~/0x09-libasm/Concept$ ./a.out 1 1
+1 + 1 = 2
+alex@~/0x09-libasm/Concept$ ./a.out 23424 234234
+23424 + 234234 = 257658
+alex@~/0x09-libasm/Concept$ 
+```
 
 ## Author
 Gonzalo Gomez Millan  
