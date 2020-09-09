@@ -1,4 +1,4 @@
-# My_assembly <br/> <h2>The workshop</h2>
+# My_assembly
 Everything you need to know about basics in x86-64 Assembly
 
 ## :book: Table of content
