@@ -45,6 +45,41 @@ $ nasm -f elf64 <file.asm>
 This command forms a .o file that we can then link with other .o files (even
 if they were compiled from C source code).
 
+## Static_sections
+
+- Code: .text
+- Read-only data: .rodata
+- Read/write data: .data
+- Unitialized data: .bss
+- See nm and objdump
+
+
+**Example:**
+```
+alex@~/0x09-libasm/Concept$ cat example_0.asm 
+BITS 64
+
+global my_function      ; EXPORT our function 'my_function'
+extern another_function     ; IMPORT the function 'another_function'
+
+section .data
+                ; Declare static data
+    my_str db "Holberton", 0Ah, 0
+    ; "Holberton", followed by a new line (0A hexa), and \0
+
+
+section .text
+                ; Code section
+
+my_function:            ; This is a symbol
+    ; Do some
+    ; some
+    ; stuff
+    ; here
+alex@~/0x09-libasm/Concept$ nasm -f elf64 example_0.asm 
+alex@~/0x09-libasm/Concept$ 
+```
+
 ## Workshop
 
 ### Task 0: Add me
