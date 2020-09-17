@@ -7,7 +7,7 @@ Everything you need to know about basics in x86-64 Assembly
 - [Assembly_to_ELF_object_file](#Assembly)
 - [Static_sections](#Static_sections)
 - [Workshop](#Workshop)
-- [Author](#Author)
+- [Author](#sunglasses-Author)
 - [License](#balance_scale-Licence)
 
 ## Requirements
