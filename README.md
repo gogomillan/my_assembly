@@ -7,8 +7,8 @@ Everything you need to know about basics in x86-64 Assembly
 - [Assembly_to_ELF_object_file](#Assembly)
 - [Static sections](#Static-sections)
 - [Workshop](#Workshop)
-- [Author](#sunglasses-Author--arrow_up)
-- [License](#balance_scale-Licence--arrow_up)
+- [Author](#sunglasses-Author--arrow_up-)
+- [License](#balance_scale-Licence--arrow_up-)
 
 ## Requirements
 Heres a list of the different tools used during this concept: 
