@@ -3,9 +3,9 @@ Everything you need to know about basics in x86-64 Assembly
 
 ## :books: Table of content
 - [Requirements](#Requirements)
-- [Assembly_syntax](#Assembly_syntax)
+- [Assembly_syntax](#Assembly-syntax)
 - [Assembly_to_ELF_object_file](#Assembly)
-- [Static_sections](#Static_sections)
+- [Static_sections](#Static-sections)
 - [Workshop](#Workshop)
 - [Author](#sunglasses-Author)
 - [License](#balance_scale-Licence)
@@ -18,7 +18,7 @@ Heres a list of the different tools used during this concept:
 - gcc version 4.8.4
 - [EYNTK] x86-64 Assembly (Refference to the Holberton's intranet)
 
-## Assembly_syntax
+## Assembly syntax
 - x86 Assembly
 - 64-bit architecture
 - Intel
@@ -46,7 +46,7 @@ $ nasm -f elf64 <file.asm>
 This command forms a .o file that we can then link with other .o files (even
 if they were compiled from C source code).
 
-## Static_sections
+## Static sections
 
 - Code: .text
 - Read-only data: .rodata
