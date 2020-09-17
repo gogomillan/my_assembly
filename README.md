@@ -3,12 +3,12 @@ Everything you need to know about basics in x86-64 Assembly
 
 ## :books: Table of content
 - [Requirements](#Requirements)
-- [Assembly_syntax](#Assembly-syntax)
+- [Assembly syntax](#Assembly-syntax)
 - [Assembly_to_ELF_object_file](#Assembly)
-- [Static_sections](#Static-sections)
+- [Static sections](#Static-sections)
 - [Workshop](#Workshop)
-- [Author](#sunglasses-Author)
-- [License](#balance_scale-Licence)
+- [Author](#sunglasses-Author-arrow_up)
+- [License](#balance_scale-Licence-arrow_up)
 
 ## Requirements
 Heres a list of the different tools used during this concept: 
@@ -142,12 +142,12 @@ alex@~/0x09-libasm/Concept$ ./a.out 23424 234234
 alex@~/0x09-libasm/Concept$ 
 ```
 
-## :sunglasses: Author
+## :sunglasses: Author [:arrow_up:](#My_assembly)
 Gonzalo Gomez Millan  
 [![GitHub](https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/gogomillan)
 [![Tweeting](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gogomillan)
 [![Linking](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gogomillan)
 
-## :balance_scale: Licence
+## :balance_scale: Licence [:arrow_up:](#My_assembly)
 MIT
 \[ [Read](LICENSE) \]
