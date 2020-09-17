@@ -8,7 +8,7 @@ Everything you need to know about basics in x86-64 Assembly
 - [Static_sections](#Static_sections)
 - [Workshop](#Workshop)
 - [Author](#Author)
-- [License](#License)
+- [License](#balance_scale-Licence)
 
 ## Requirements
 Heres a list of the different tools used during this concept: 
