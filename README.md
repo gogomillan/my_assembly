@@ -1,7 +1,7 @@
 # My_assembly
 Everything you need to know about basics in x86-64 Assembly
 
-## :book: Table of content
+## :books: Table of content
 - [Requirements](#Requirements)
 - [Assembly_syntax](#Assembly_syntax)
 - [Assembly_to_ELF_object_file](#Assembly)
