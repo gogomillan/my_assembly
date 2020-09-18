@@ -83,7 +83,55 @@ alex@~/0x09-libasm/Concept$
 
 ## Workshop \[[:arrow_up:](#My_assembly)\]
 
-### Task 0: Add me
+### Task 0: Hello Worl!
+Write a program that writes Hello wolrd text on the screen
+
+**Example:**
+```
+vagrant@gogomillan:~$ cat hello_64.asm
+; Equivalent C code
+; /* hello.c */
+; #include <stdio.h>
+; int main()
+; {
+;   char msg[] = "Hello world\n";
+;   printf("%s\n",msg);
+;   return (0);
+; }
+
+; NASM code style
+; Declare needed C  functions
+        extern  printf          ; the C function, to be called
+
+        section .data           ; Data section, initialized variables
+msg:    db "Hello world", 0     ; C string needs 0
+fmt:    db "%s", 10, 0          ; The printf format, "\n",'0'
+
+        section .text           ; Code section.
+
+        global  main            ; the standard gcc entry point
+main:                           ; the program label for the entry point
+        push    rbp             ; set up stack frame, must be alligned
+
+        mov     rdi, fmt
+        mov     rsi, msg
+        mov     rax, 0          ; or can be  xor  rax,rax
+        call    printf          ; Call C function
+
+        pop     rbp             ; restore stack
+
+        mov     rax, 0          ; normal, no error, return value
+        ret                     ; return
+vagrant@gogomillan:~$ nasm -f elf64 hello_64.asm
+vagrant@gogomillan:~$ gcc -o hello_64  hello_64.o
+vagrant@gogomillan:~$ ./hello_64
+Hello world
+vagrant@gogomillan:~$
+```
+**File:** 
+\[ [hello_64.asm](hello_64.asm) \]
+
+### Task 1: Add me
 
 Write a simple procedure in Assembly that takes two integers as parameters
 (32-bit), and returns their sum as an integer (32-bit).  
