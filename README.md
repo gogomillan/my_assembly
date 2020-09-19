@@ -215,6 +215,69 @@ alex@~/0x09-libasm/Concept$ ./a.out 23424 234234
 23424 + 234234 = 257658
 alex@~/0x09-libasm/Concept$ 
 ```
+**Files:** 
+\[ [add_me.asm](add_me.asm) \]
+
+### Task 3: Swap
+Write a procedure in Assembly that takes two pointers to int as parameters
+(64-bit), and swap the values they point to. Your procedure does not return
+anything.
+
+The purpose here is to learn how to manipulate data that is not stored in
+registers but in memory.
+
+**Example:**
+```bash
+alex@~/0x09-libasm/Concept$ cat swap_main.c 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+void swap(int *a, int *b);
+
+/**
+ * main - Program entry point
+ * @argc: Arguments counter
+ * @argv: Arguments vector
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(int argc, const char *argv[])
+{
+    int a;
+    int b;
+
+    if (argc < 3)
+    {
+        dprintf(STDERR_FILENO, "Usage: %s <a> <b>\n", argv[0]);
+        return (EXIT_FAILURE);
+    }
+
+    a = atoi(argv[1]);
+    b = atoi(argv[2]);
+
+    printf("Before: a = %d, b = %d\n", a, b);
+
+    swap(&a, &b);
+
+    printf("After: a = %d, b = %d\n", a, b);
+
+    return (EXIT_SUCCESS);
+}
+alex@~/0x09-libasm/Concept$ nasm -f elf64 swap.asm 
+alex@~/0x09-libasm/Concept$ gcc -c swap_main.c 
+alex@~/0x09-libasm/Concept$ gcc swap.o swap_main.o 
+alex@~/0x09-libasm/Concept$ ./a.out 402 98
+Before: a = 402, b = 98
+After: a = 98, b = 402
+alex@~/0x09-libasm/Concept$ ./a.out 1234 5678
+Before: a = 1234, b = 5678
+After: a = 5678, b = 1234
+alex@~/0x09-libasm/Concept$ 
+```
+**Files:** 
+\[ [swap.asm](swap.asm) \]
+
 
 ## Author \[[:arrow_up:](#My_assembly)\]
 Gonzalo Gomez Millan  
