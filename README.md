@@ -278,6 +278,50 @@ alex@~/0x09-libasm/Concept$
 **Files:** 
 \[ [swap.asm](swap.asm) \]
 
+### Task 4: Print alphabet
+Write a procedure in Assembly that prints the lowercase alphabet on the
+standard output. Youre not allowed to declare any data in the different data
+sections. Youll have to use a loop. Youll have to call the write system call.
+
+The purpose here is to learn how to make a system call, how to build a loop,
+and how to handle local variables in the stack
+
+Tips:
+- Symbols
+- CMP
+- JMP and Jxx instructions
+- SYSCALL: The syscall number of write is 1
+
+**Example:**
+```bash
+alex@~/0x09-libasm/Concept$ cat alphabet_main.c 
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+void print_alphabet(void);
+
+/**
+ * main - Program entry point
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(void)
+{
+    print_alphabet();
+    write(1, "\n", 1);
+    return (EXIT_SUCCESS);
+}
+alex@~/0x09-libasm/Concept$ nasm -f elf64 alphabet.asm 
+alex@~/0x09-libasm/Concept$ gcc -c alphabet_main.c 
+alex@~/0x09-libasm/Concept$ gcc alphabet.o alphabet_main.o 
+alex@~/0x09-libasm/Concept$ ./a.out 
+abcdefghijklmnopqrstuvwxyz
+alex@~/0x09-libasm/Concept$ 
+```
+**Files:** 
+\[ [alphabet.asm](alphabet.asm) \]
+
 
 ## Author \[[:arrow_up:](#My_assembly)\]
 Gonzalo Gomez Millan  
