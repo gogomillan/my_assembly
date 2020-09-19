@@ -87,7 +87,7 @@ alex@~/0x09-libasm/Concept$
 Write a program that writes Hello wolrd text on the screen
 
 **Example:**
-```
+```bash
 vagrant@gogomillan:~$ cat hello_64.asm
 ; Equivalent C code
 ; /* hello.c */
@@ -131,7 +131,33 @@ vagrant@gogomillan:~$
 **File:** 
 \[ [hello_64.asm](hello_64.asm) \]
 
-### Task 1: Add me
+### Task 1: Returning!
+Write a program that add two numbers and return the return to the OS
+
+**Example:**
+```bash
+vagrant@gogomillan:~$ cat sum.asm
+; NASM code style
+
+        section .text   ; Code section
+        global  main    ; The standard gcc entry point
+
+main:                   ; The program label for the entry point
+        mov     eax, 1  ; put 1 (1 byte int/char) into accumulator register
+        add     eax, 2  ; add 2 (1 byte int/char), storing result in accumulator
+
+        ret             ; Return
+vagrant@gogomillan:~$ nasm -f elf64 sum.asm
+vagrant@gogomillan:~$ gcc -o sum sum.o
+vagrant@gogomillan:~$ ./sum
+vagrant@gogomillan:~$ echo $?
+3
+vagrant@gogomillan:~$
+```
+**File:** 
+\[ [sum.asm](sum.asm) \]
+
+### Task 2: Add me
 
 Write a simple procedure in Assembly that takes two integers as parameters
 (32-bit), and returns their sum as an integer (32-bit).  
